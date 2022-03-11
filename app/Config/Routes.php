@@ -32,7 +32,11 @@ $routes->setAutoRoute(true);
 
 $routes->get('/', 'Home::index');
 
-$routes->resource('user', ['only' => ['index', 'create', 'show', 'update']]);
+// $routes->resource('user', ['only' => ['index', 'create', 'show', 'update']]);
+$routes->post("login", "Login::index");
+
+$routes->get("users", "User::index");
+
 $routes->resource('computadora', ['only' => ['index', 'create', 'show', 'update']]);
 
 // $routes->resource('user', ['controller' => 'api/v1/User']);
