@@ -35,7 +35,7 @@ $routes->get('/', 'Home::index');
 // $routes->resource('user', ['only' => ['index', 'create', 'show', 'update']]);
 $routes->post("login", "Login::index");
 
-$routes->get("users", "User::index");
+$routes->get("users", "User::index", ['filter' => 'authFilter']);
 
 $routes->resource('computadora', ['only' => ['index', 'create', 'show', 'update']]);
 

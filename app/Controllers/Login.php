@@ -30,7 +30,7 @@ class Login extends ResourceController
         }
  
         $key = getenv('TOKEN_SECRET');
-        // $key = Services::getSecretkey();
+		
         $iat = time();
         $exp = $iat + 3600;
  

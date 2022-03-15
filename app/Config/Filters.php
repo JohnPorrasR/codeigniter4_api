@@ -46,10 +46,5 @@ class Filters extends BaseConfig
     public $methods = [];
 	
     public $filters = [
-		'authFilter' => [
-			'before' => [
-				'user',
-			],
-		],
 	];
 }
